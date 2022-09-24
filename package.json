@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "node-sass": "^7.0.3",
+    "node-sass-chokidar": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "scripts": {
+    "scss": "node-sass --watch src/scss/style.scss run scsstyle.scss -o src/css",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --usePolling --poling-interval 500"
+  }
+}

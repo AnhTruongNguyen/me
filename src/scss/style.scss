@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+@import './variables.scss';
+
+// kết thúc thành phần chung
+
+#main {
+    background-image: linear-gradient(to right, rgba(36, 89, 119, 0.753), yellow);
+    width: 100%;
+    height: 3000px;
+   
+}
+.row {
+    padding: 80px 50px;
+}
+
+#header {
+    background: rgba(255, 254, 254, 0.281);
+    border-radius: 10px;
+    .header__info {
+        display: flex;
+        padding: 30px 20px;
+        img.avata {
+            width: 150px;
+            border-radius: 20px;
+        }
+        .col {
+            padding-left: 30px;
+            display: inline-block;
+            width: 310px;
+            .col__begin {
+                display: inline-block;
+                width: 100%;
+                .name {
+                    display: inline-block;
+                    padding-right: 10px;
+                    h1 {
+                        font-size: 23px; 
+                        padding-bottom: 10px;  
+                    }
+                    p { 
+                        font-size: 18px;
+                    }
+                }
+                .logo {   
+                    padding: 0 10px;
+                    width: 50px;
+                    float: right;
+                    background: rgba(255, 254, 254, 0.281);
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+                }
+            }
+            .social {
+                
+                padding-top: 40px;
+                font-size: 25px;
+                
+                a {
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 30px ;
+                    position: relative;
+                    color: $blColor;
+                    padding: 8px 18px;
+                    margin-left: 30px;
+                    border-radius: 100%;
+                    background-color: $textColor;
+                    &::before {
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 13px;
+                        opacity: 0;
+                        content: 'facebook';
+                        border-radius: 20px;
+                        position: absolute;
+                        width: 120px;
+                        height: 30px;
+                        background-color: rgb(45, 82, 184);
+                        top: 0;
+                        left: -35px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        color: $textColor;
+                        background-color: rgb(42, 45, 216);
+                    }
+                    &:hover::before {
+                        top: -40px;
+                        left: -35px;
+                        opacity: 1;
+                        letter-spacing: 5px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+                       
+                    }
+                    
+                }
+            }
+            
+        }
+        .col__address {
+            padding-left: 80px;
+            font-size: 20px;
+            .email {
+                padding-bottom: 30px;
+            }
+        }
+        .col__birth {
+            padding-left: 80px;
+            font-size: 20px;
+            .birth {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+#content {
+    display: flex;
+    padding-top: 30px;
+    .aside {
+        display: inline-block;
+        background: rgba(255, 254, 254, 0.281);
+        border-radius: 10px;
+        width: 200px;
+        .nav {
+            text-align: center;
+            padding: 30px;
+            .nav__box {
+                border-radius: 20px;
+                img {
+                    padding-top: 20px;
+                    width: 100px;
+                }
+                p {
+                    font-size: 26px;
+                    padding-bottom: 20px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-image: linear-gradient(to right, rgba(218, 199, 37, 0.753), rgb(162, 0, 255));
+                }
+            }    
+        }
+    }
+    .section {
+        background: rgba(255, 254, 254, 0.281);
+        margin-left: 30px;
+        display: inline-block;
+        border-radius: 10px;
+        .nav__me {
+            padding: 30px;
+
+            .me {
+                h1 {
+                    font-size: 30px;
+                }
+                P {
+                    font-size: 16px;
+    
+                }
+                h2 {
+                    font-size: 24px;
+    
+                }
+            }
+        }
+
+    }
+
+}
