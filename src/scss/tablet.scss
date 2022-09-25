@@ -1,0 +1,40 @@
+html {
+    @include respond(tablet){
+    #header {
+        .header__info {
+            display: inline-block;
+            img.avata {
+                width: 23%;
+            }
+            .col {
+                width: 70%;
+                float: right;
+                .col__begin {
+
+                }
+                .social {
+                    padding-top: 10px;
+                }
+
+            }
+            .col__address {
+                display: inline-block;
+                padding: 20px 0;
+                
+                .email {
+                    padding-bottom: 20px;
+                }
+            }
+            .col__birth {
+                padding-left: 10px;
+                display: inline-block;
+               
+                .birth {
+                    padding-bottom: 20px;
+                }
+            }
+
+        }
+    }
+
+}}

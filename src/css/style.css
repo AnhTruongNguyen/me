@@ -5,6 +5,27 @@
 span {
   opacity: 0.6; }
 
+@media (max-width: 1000px) {
+  html #header .header__info {
+    display: inline-block; }
+    html #header .header__info img.avata {
+      width: 23%; }
+    html #header .header__info .col {
+      width: 70%;
+      float: right; }
+      html #header .header__info .col .social {
+        padding-top: 10px; }
+    html #header .header__info .col__address {
+      display: inline-block;
+      padding: 20px 0; }
+      html #header .header__info .col__address .email {
+        padding-bottom: 20px; }
+    html #header .header__info .col__birth {
+      padding-left: 10px;
+      display: inline-block; }
+      html #header .header__info .col__birth .birth {
+        padding-bottom: 20px; } }
+
 @media (max-width: 600px) {
   html .row {
     padding: 20px 10px; }
@@ -183,12 +204,12 @@ html {
             letter-spacing: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
     #header .header__info .col__address {
-      padding-left: 80px;
+      padding-left: 25px;
       font-size: 20px; }
       #header .header__info .col__address .email {
         padding-bottom: 30px; }
     #header .header__info .col__birth {
-      padding-left: 80px;
+      padding-left: 25px;
       font-size: 20px; }
       #header .header__info .col__birth .birth {
         padding-bottom: 30px; }

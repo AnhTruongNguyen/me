@@ -30,7 +30,7 @@
                 <div class="col__address">
                     <div class="email">
                         <span>Email</span>
-                        <p>nguyenanhtruong5350@gmail.com</p>
+                        <p>nguyenanh***@gmail.com</p>
                     </div>
                     <div class="city">
                         <span>Địa chỉ</span>
@@ -126,11 +126,9 @@
     tab__boxs.forEach(function(el){
         el.addEventListener("click", openTabs);
     });
-        
         function openTabs(el){
             var btn = el.currentTarget;
             var electronic = btn.dataset.electronic;
-
             tab__contents.forEach(function(el){
                 el.classList.remove("active");
             });
@@ -140,8 +138,6 @@
             document.querySelector("#" + electronic).classList.add("active");
             btn.classList.add("active");
         }
-    
-
 </script>
 </body>
 </html>
