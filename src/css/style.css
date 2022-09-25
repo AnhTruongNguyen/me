@@ -41,12 +41,15 @@ span {
           #header .header__info .col .col__begin .name p {
             font-size: 18px; }
         #header .header__info .col .col__begin .logo {
+          transition: all .3s ease-in-out;
           padding: 0 10px;
           width: 50px;
           float: right;
           background: rgba(255, 254, 254, 0.281);
           border-radius: 10px;
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+          #header .header__info .col .col__begin .logo:hover {
+            transform: scale(1.1); }
       #header .header__info .col .social {
         padding-top: 40px;
         font-size: 25px; }
