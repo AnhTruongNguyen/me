@@ -24,7 +24,9 @@ span {
       padding-left: 10px;
       display: inline-block; }
       html #header .header__info .col__birth .birth {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+  html #content .section .tab__content .me__web {
+    padding: 30px 0; } }
 
 @media (max-width: 600px) {
   html .row {
