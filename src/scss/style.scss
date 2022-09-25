@@ -2,11 +2,17 @@
     padding: 0;
     margin: 0;
 }
+@import './variables.scss';
+@import './mixin.scss';
+@import './phone.scss';
 html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-@import './variables.scss';
+
+
+
 
 // kết thúc thành phần chung
 
@@ -168,6 +174,13 @@ html {
             text-align: center;
             padding: 30px;
             .tab__box {
+                i {
+                   
+                    font-size: 100px;
+                    padding-bottom: 10px;
+                }
+                color: black;
+                padding: 20px 10px;
                 background: none;
                 border:none;
                 font-size: 30px;
@@ -177,7 +190,9 @@ html {
                     font-size: 24px;            
                 }     
                 &:hover {
-                    color: #4BB3FD;
+                    color: rgba(47, 64, 161, 0.637);
+                    cursor: pointer;
+                  
                     background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow);
                 }       
             } 
