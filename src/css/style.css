@@ -26,6 +26,12 @@ span {
           margin-left: 10px; }
           html #header .header__info .col .social .fb::before {
             display: none; }
+          html #header .header__info .col .social .fb:hover::before {
+            display: none; }
+        html #header .header__info .col .social .yt::before {
+          display: none; }
+        html #header .header__info .col .social .yt:hover::before {
+          display: none; }
     html #header .header__info .col__address {
       padding-top: 20px;
       padding-left: 10px; }

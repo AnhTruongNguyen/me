@@ -29,6 +29,17 @@ html {
                             &::before {
                                 display: none;
                             }
+                            &:hover::before {
+                                display: none;
+                            }
+                        }
+                        .yt {
+                            &::before {
+                                display: none;
+                            }
+                            &:hover::before {
+                                display: none;
+                            }
                         }
                     }
                 }
