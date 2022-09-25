@@ -3,6 +3,7 @@
   margin: 0; }
 
 html {
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif; }
 
 span {
@@ -10,8 +11,7 @@ span {
 
 #main {
   background-image: linear-gradient(to right, rgba(36, 89, 119, 0.753), yellow);
-  width: 100%;
-  height: 3000px; }
+  width: 100%; }
 
 .row {
   padding: 80px 50px; }
@@ -50,18 +50,18 @@ span {
       #header .header__info .col .social {
         padding-top: 40px;
         font-size: 25px; }
-        #header .header__info .col .social a {
+        #header .header__info .col .social .fb {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           text-decoration: none;
           font-weight: 700;
-          font-size: 30px;
+          font-size: 25px;
           position: relative;
           color: #000;
-          padding: 8px 18px;
+          padding: 8px 15px;
           margin-left: 30px;
           border-radius: 100%;
           background-color: #fff; }
-          #header .header__info .col .social a::before {
+          #header .header__info .col .social .fb::before {
             line-height: 30px;
             text-align: center;
             font-size: 13px;
@@ -75,10 +75,44 @@ span {
             top: 0;
             left: -35px;
             transition: all 0.3s ease-in-out; }
-          #header .header__info .col .social a:hover {
+          #header .header__info .col .social .fb:hover {
             color: #fff;
             background-color: #2a2dd8; }
-          #header .header__info .col .social a:hover::before {
+          #header .header__info .col .social .fb:hover::before {
+            top: -40px;
+            left: -35px;
+            opacity: 1;
+            letter-spacing: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+        #header .header__info .col .social .yt {
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 25px;
+          position: relative;
+          color: #000;
+          padding: 8px 10px;
+          margin-left: 30px;
+          border-radius: 100%;
+          background-color: #fff; }
+          #header .header__info .col .social .yt::before {
+            line-height: 30px;
+            text-align: center;
+            font-size: 13px;
+            opacity: 0;
+            content: 'youtube';
+            border-radius: 20px;
+            position: absolute;
+            width: 120px;
+            height: 30px;
+            background-color: red;
+            top: 0;
+            left: -35px;
+            transition: all 0.3s ease-in-out; }
+          #header .header__info .col .social .yt:hover {
+            color: #fff;
+            background-color: red; }
+          #header .header__info .col .social .yt:hover::before {
             top: -40px;
             left: -35px;
             opacity: 1;
@@ -107,16 +141,14 @@ span {
       text-align: center;
       padding: 30px; }
       #content .aside .nav .nav__box {
-        border-radius: 20px; }
-        #content .aside .nav .nav__box img {
-          padding-top: 20px;
-          width: 100px; }
+        font-size: 30px;
+        border-radius: 20px;
+        margin-bottom: 30px; }
         #content .aside .nav .nav__box p {
-          font-size: 26px;
-          padding-bottom: 20px; }
+          font-size: 24px; }
         #content .aside .nav .nav__box:hover {
-          cursor: pointer;
-          background-image: linear-gradient(to right, rgba(218, 199, 37, 0.753), #a200ff); }
+          color: #4BB3FD;
+          background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow); }
   #content .section {
     background: rgba(255, 254, 254, 0.281);
     margin-left: 30px;
@@ -124,9 +156,26 @@ span {
     border-radius: 10px; }
     #content .section .nav__me {
       padding: 30px; }
-      #content .section .nav__me .me h1 {
-        font-size: 30px; }
-      #content .section .nav__me .me P {
-        font-size: 16px; }
-      #content .section .nav__me .me h2 {
+      #content .section .nav__me #me h1 {
+        font-size: 50px;
+        margin-bottom: 30px; }
+      #content .section .nav__me #me P {
+        font-size: 16px;
+        padding-bottom: 20px; }
+      #content .section .nav__me #me h2 {
         font-size: 24px; }
+      #content .section .nav__me #me .me__web {
+        padding: 50px; }
+        #content .section .nav__me #me .me__web .group {
+          display: inline-block;
+          padding-right: 20px; }
+          #content .section .nav__me #me .me__web .group img {
+            border-radius: 10px;
+            width: 400px;
+            transition: all .3s ease; }
+            #content .section .nav__me #me .me__web .group img:hover {
+              transform: scale(1.05); }
+          #content .section .nav__me #me .me__web .group p {
+            padding-top: 20px;
+            font-size: 24px;
+            text-align: center; }
