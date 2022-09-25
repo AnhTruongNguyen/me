@@ -52,43 +52,41 @@
             <div id="content">
                 <div class="aside">
                     <div class="nav">
-                        <div class="nav__box">
+                        <button class="tab__box active" data-electronic="me">
                             <lord-icon
                             src="https://cdn.lordicon.com/zthozvfn.json"
                             trigger="hover"
                             style="width:150px;height:150px"></lord-icon>
                             <p>Bản Thân</p>
-                        </div>
-                        <div class="nav__box">  
+                        </button>
+                        <button class="tab__box" data-electronic="learn">  
                             <lord-icon
                             src="https://cdn.lordicon.com/dxoycpzg.json"
                             trigger="morph"
                             style="width:150px;height:150px"></lord-icon>
                             <P>Học Vấn</P>
-                        </div>
-                        <div class="nav__box">
+                        </button>
+                        <button class="tab__box">
                             <lord-icon
                             src="https://cdn.lordicon.com/pjibjvxa.json"
                             trigger="hover"
                             style="width:150px;height:150px">
-                            
                         </lord-icon>
                         <p>Mục Tiêu</p>
-                        </div>
-                        <div class="nav__box">
+                        </button>
+                        <button class="tab__box">
                             <lord-icon
                                 src="https://cdn.lordicon.com/ytdpzbrl.json"
                                 trigger="hover"
                                 style="width:150px;height:150px">
                                 </lord-icon>
                             <p>Ưa Thích</p>
-                        </div>
-                       
+                        </button>                
                     </div>
                 </div>
                 <div class="section">
-                    <div class="nav__me">
-                    <div id="me">
+                    <div id="me" class="tab__content active">
+                   
                         <h1>Giới thiệu</h1>
                         <p>Xin chào ! Mình hiện là...</p>
                         <p>Mình mong muốn sau này...</p>
@@ -103,7 +101,30 @@
                            <p>W3 Band</p>
                         </div>
                         </div>
+                    
                     </div>
+                    <div id="learn" class="tab__content">
+                        <h1>Học Vấn</h1>
+                        <div class="education">
+                            <div class="edu__logo">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Giáo dục
+                            </div>
+                            <div class="edu__content">
+                            <h3>Trường Phân Hiệu Đà Nẵng Tại Kon Tum</h3>
+                            <h4>2014-2019</h4>
+                            <p>bla bla</p>
+                        </div>
+
+
+                            
+
+
+                        </div>
+                        <div class="experience">
+
+                        </div>
+                            
                     </div>
                 </div>
 
@@ -111,5 +132,30 @@
         </div>
     </div>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+<script>
+    var tab__boxs = document.querySelectorAll(".tab__box");
+    var tab__contents = document.querySelectorAll(".tab__content");
+    
+    tab__boxs.forEach(function(el){
+        el.addEventListener("click", openTabs);
+    });
+        
+        function openTabs(el){
+            var btn = el.currentTarget;
+            var electronic = btn.dataset.electronic;
+
+            tab__contents.forEach(function(el){
+                el.classList.remove("active");
+            });
+            tab__boxs.forEach(function(el){
+                el.classList.remove("active");
+            });
+            document.querySelector("#" + electronic).classList.add("active");
+            btn.classList.add("active");
+        }
+    
+
+</script>
 </body>
 </html>

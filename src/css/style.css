@@ -143,42 +143,59 @@ span {
     #content .aside .nav {
       text-align: center;
       padding: 30px; }
-      #content .aside .nav .nav__box {
+      #content .aside .nav .tab__box {
+        background: none;
+        border: none;
         font-size: 30px;
         border-radius: 20px;
         margin-bottom: 30px; }
-        #content .aside .nav .nav__box p {
+        #content .aside .nav .tab__box p {
           font-size: 24px; }
-        #content .aside .nav .nav__box:hover {
+        #content .aside .nav .tab__box:hover {
           color: #4BB3FD;
           background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow); }
+      #content .aside .nav .active {
+        background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow); }
   #content .section {
     background: rgba(255, 254, 254, 0.281);
     margin-left: 30px;
     display: inline-block;
     border-radius: 10px; }
-    #content .section .nav__me {
+    #content .section .tab__content {
+      display: none;
       padding: 30px; }
-      #content .section .nav__me #me h1 {
+      #content .section .tab__content h1 {
         font-size: 50px;
         margin-bottom: 30px; }
-      #content .section .nav__me #me P {
+      #content .section .tab__content P {
         font-size: 16px;
         padding-bottom: 20px; }
-      #content .section .nav__me #me h2 {
+      #content .section .tab__content h2 {
         font-size: 24px; }
-      #content .section .nav__me #me .me__web {
+      #content .section .tab__content .me__web {
         padding: 50px; }
-        #content .section .nav__me #me .me__web .group {
+        #content .section .tab__content .me__web .group {
           display: inline-block;
           padding-right: 20px; }
-          #content .section .nav__me #me .me__web .group img {
+          #content .section .tab__content .me__web .group img {
             border-radius: 10px;
             width: 400px;
             transition: all .3s ease; }
-            #content .section .nav__me #me .me__web .group img:hover {
+            #content .section .tab__content .me__web .group img:hover {
               transform: scale(1.05); }
-          #content .section .nav__me #me .me__web .group p {
+          #content .section .tab__content .me__web .group p {
             padding-top: 20px;
             font-size: 24px;
             text-align: center; }
+    #content .section .active {
+      display: block; }
+    #content .section #learn .education .edu__logo {
+      padding-bottom: 30px;
+      font-size: 30px; }
+      #content .section #learn .education .edu__logo i {
+        font-size: 50px; }
+    #content .section #learn .education .edu__content {
+      padding-left: 70px; }
+      #content .section #learn .education .edu__content h4 {
+        padding: 20px 0;
+        opacity: 0.5; }

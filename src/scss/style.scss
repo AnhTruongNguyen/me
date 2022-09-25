@@ -167,25 +167,23 @@ html {
         .nav {
             text-align: center;
             padding: 30px;
-            .nav__box {
+            .tab__box {
+                background: none;
+                border:none;
                 font-size: 30px;
                 border-radius: 20px;
                 margin-bottom: 30px;
                 p {
-                    font-size: 24px;
-            
-                }
-
-                
+                    font-size: 24px;            
+                }     
                 &:hover {
                     color: #4BB3FD;
                     background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow);
-
-                }
-              
-
-            
-            }    
+                }       
+            } 
+            .active {
+                background-image: linear-gradient(to top, rgba(36, 89, 119, 0.904), yellow);;
+            } 
         }
     }
     .section {
@@ -193,45 +191,63 @@ html {
         margin-left: 30px;
         display: inline-block;
         border-radius: 10px;
-        .nav__me {
+        .tab__content {
+            display: none;
             padding: 30px;
-            #me {
-                h1 {
-                    font-size: 50px;
-                    margin-bottom: 30px;
-                }
-                P {
-                    font-size: 16px;
-                    padding-bottom: 20px;
-                }
-                h2 {
-                    font-size: 24px;
-                }
-                .me__web {
-                   
-                    padding: 50px;
-                    .group {
-                       
-                        display: inline-block;
-                        padding-right: 20px;
-                        img {
-                            border-radius: 10px;
-                            width: 400px;
-                            transition: all .3s ease;
-                            &:hover {
-                                transform: scale(1.05);
-                            }
+            h1 {
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+            P {
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .me__web {
+                padding: 50px;
+                .group { 
+                    display: inline-block;
+                    padding-right: 20px;
+                    img {
+                        border-radius: 10px;
+                        width: 400px;
+                        transition: all .3s ease;
+                        &:hover {
+                            transform: scale(1.05);
                         }
-                        p {
-                           
-                            padding-top: 20px;
-                            font-size: 24px;
-                            text-align: center;
-                           
-                        }
+                    }
+                    p { 
+                        padding-top: 20px;
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                }
+            }  
+        }
+        .active {
+            display: block;
+        }
+        #learn {
+            .education {
+                .edu__logo {
+                    padding-bottom: 30px;
+                    font-size: 30px;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+                .edu__content {
+                    padding-left: 70px;
+                    h4 {
+                        padding: 20px 0;
+                        opacity: 0.5;
                     }
                 }
             }
+        
+
         }
     }
 }
