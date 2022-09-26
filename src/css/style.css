@@ -36,13 +36,16 @@ span {
     html #header .header__info img.avata {
       width: 100px; }
     html #header .header__info .col {
+      box-sizing: border-box;
       float: right;
       width: 240px;
-      padding-left: 10px; }
+      padding-left: 9px; }
       html #header .header__info .col .col__begin .name {
         padding-right: 5px; }
         html #header .header__info .col .col__begin .name h1 {
           font-size: 16px; }
+      html #header .header__info .col .col__begin .logo {
+        display: flex; }
       html #header .header__info .col .social {
         padding-top: 3px; }
         html #header .header__info .col .social .fb {
@@ -89,6 +92,10 @@ span {
           html #content .section .tab__content .me__web .group img {
             width: 300px; } }
 
+@media (max-width: 416px) {
+  html #header .header__info .col {
+    width: 215px; } }
+
 html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif; }
@@ -114,7 +121,7 @@ html {
       display: inline-block;
       width: 310px; }
       #header .header__info .col .col__begin {
-        display: inline-block;
+        display: flex;
         width: 100%; }
         #header .header__info .col .col__begin .name {
           display: inline-block;

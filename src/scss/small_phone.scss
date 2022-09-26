@@ -1,0 +1,13 @@
+html {
+    @include respond(small_phone){
+        #header {
+            .header__info {
+                .col {
+                    width: 215px;
+                }
+            }
+        }
+
+        
+    }
+}
